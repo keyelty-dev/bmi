@@ -5,6 +5,8 @@ This repo contains one of my **first JavaScript projects**.
 I'm just getting started on my JavaScript journey and exploring the basics through hands-on mini-projects.
 - 🔭 DEMO of the site: [BMI caculator](https://keyelty-dev.github.io/bmi/)
 
+- ![...](https://github.com/keyelty-dev/bmi/blob/main/12.png?raw=true)
+
 ## 🎯 My Goals
 
 - Practice core JavaScript concepts (like DOM, events, variables, and functions)
@@ -26,6 +28,17 @@ As I learn more, I’ll improve and build more advanced projects along the way.
 
 If you’re also learning JavaScript or just passing by, feel free to share feedback or connect!  
 I’d love to hear your thoughts or collab in the future. 😊
+
+### 📫 Contact Me
+
+[![Email](https://img.shields.io/badge/Email-kianalotfiiiiiii@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kianalotfiiiiiii@gmail.com)
+[![Phone](https://img.shields.io/badge/Phone-+989387617882-teal?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+989387617882)
+
+### 🌐 Socials
+
+[![GitHub](https://img.shields.io/badge/GitHub-keyelty--dev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keyelty-dev)
+[![Instagram](https://img.shields.io/badge/Instagram-kianalotfi__developer-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/kianalotfi.developer?igsh=ZWN5MmZ3bHVmbHVu)
+
 
 ---
 
