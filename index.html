@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../img/Animated\ Shape.svg);
+            background-size: cover;
+
+            >div {
+                width: 300px;
+                height: 300px;
+                background-color: orangered;
+                font-size: 15px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                border-radius: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                >button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: yellow;
+                    font-size: 15px;
+                    padding: 5px 20px;
+                    border: 2px solid white;
+                    margin: 10px 0;
+                }
+
+                .age {
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    >input {
+                        margin: 0 10px;
+                    }
+                }
+
+                >.gender {
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                >span {
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 5px;
+                }
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <span class="age">
+                <label for="inp6">Age </label>
+                <input type="number" name="age" id="inp6" value="20" min="20" max="60">
+            </span>
+            <span class="gender">
+                <form action="">
+                    <label for="inp5">Gender: </label>
+                    <label for="inp3">female</label>
+                    <input type="radio" name="gender" id="inp3">
+                    <label for="inp4">male</label>
+                    <input type="radio" name="gender" id="inp4">
+                </form>
+            </span>
+            <span>
+                <form action="">
+                    <label for="inp1">Weight </label>
+                    <input type="text" name="weight" id="inp1" placeholder="weight">
+
+                </form>
+            </span>
+            <span>
+                <form action="">
+                    <label for="inp2">Height </label>
+                    <input type="text" name="weight" id="inp2" placeholder="height">
+
+                </form>
+            </span>
+
+            <button onclick="bmi()">Calculate</button>
+
+
+        </div>
+
+       
+
+    </div>
+
+
+</body>
+<script>
+    function bmi() {
+        const weightInput = parseFloat(document.getElementById("inp1").value);
+        const height = parseFloat(document.getElementById("inp2").value);
+        const heightInput = height / 100;
+        
+        if (isNaN(weightInput) || isNaN(heightInput)) {
+            alert("Please enter valid numbers for weight and height.");
+            return;
+        }
+        let bmi = weightInput / (heightInput ** 2);
+        const bmiRounded = bmi.toFixed(2);
+
+        if (bmi < 18.5) {
+            alert('Your bmi is'+' ' + bmiRounded + ' ' + 'You are Underweight');
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            alert('Your bmi is'+' ' + bmiRounded + ' '+ 'You are Normal weight');
+        } else {
+            alert('Your bmi is'+' ' + bmiRounded + ' ' + 'You are Overweight');
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
